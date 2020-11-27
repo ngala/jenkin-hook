@@ -19,7 +19,11 @@ pipeline {
             // One or more steps need to be included within each condition's block.
             echo 'success'
             sh 'docker --version'
-            sh 'ls'
+            sh 'ls -l'
+            sh 'pwd'
+            sh 'docker build --tag baby_blue:0.1 .'
+            sh 'docker tag baby_blue:0.1 846806685767.dkr.ecr.ap-southeast-1.amazonaws.com/baby_blue:0.1'
+            sh 'docker push 846806685767.dkr.ecr.ap-southeast-1.amazonaws.com/baby_blue:0.1'
         }
         failure {
             // One or more steps need to be included within each condition's block.

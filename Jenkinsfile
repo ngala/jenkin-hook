@@ -21,6 +21,7 @@ pipeline {
             sh 'docker --version'
             sh 'pwd'
             sh 'uname -a'
+            sh 'whoami'
             //sh 'aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 846806685767.dkr.ecr.ap-southeast-1.amazonaws.com'
             //sh 'docker build --tag baby_blue:0.1 .'
             //sh 'docker tag baby_blue:0.1 846806685767.dkr.ecr.ap-southeast-1.amazonaws.com/baby_blue:0.1'

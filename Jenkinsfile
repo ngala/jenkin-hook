@@ -19,6 +19,7 @@ pipeline {
             // One or more steps need to be included within each condition's block.
             echo 'success'
             sh 'docker --version'
+            sh 'ls'
         }
         failure {
             // One or more steps need to be included within each condition's block.

@@ -35,10 +35,9 @@ Before we go ahead and create a New Item on the dashboard, Jenkins requires one 
 
 After installing awscli, we need to configure credentials in jenkins user.
 
-``
-# su - jenkins 
-# aws configure 
-``
+``# su - jenkins ``
+
+``# aws configure ``
 
 The above command will ask for Access Key, Secret Key and the region. The access keys can be created using [https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/]
 

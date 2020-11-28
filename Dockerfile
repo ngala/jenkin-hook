@@ -4,4 +4,4 @@ WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 ADD ./baby_blue /code/
-
+CMD python manage.py runserver
